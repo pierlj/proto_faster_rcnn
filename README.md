@@ -4,6 +4,8 @@
 
 The code available in this repository trains a modified version of Faster R-CNN. Specifically, the classification layers in the RPN and the detection head are replaced with Prototypical Networks. Results are promising on synthetic images but mitigated on natural and aerial images. 
 
+### Prototypical Faster R-CNN principle
+![Prototypical Faster R-CNN](./imgs/prototypical_frcnn.png "Prototypical Faster R-CNN")
 
 ```
 @INPROCEEDINGS{lejeune2021experience,
