@@ -1,0 +1,102 @@
+body {
+  font-family: Helvetica;
+  background-color: rgb(245, 245, 245);
+}
+
+h1{
+  padding-left: 50px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 2px;
+  border: 1px solid grey;
+}
+
+h2 {
+  text-align:center;
+}
+
+#config-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#metainfo-container{
+  display: flex;
+  padding: 20px;
+  flex-direction: column; 
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.emb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.prop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.eval{
+  display:flex;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  padding:50px;
+}
+
+.emb{
+  width: 75%;
+}
+
+.hist{
+  width: 47%;
+}
+
+.proto{
+  width: 47%;
+}
+
+.proposal-image{
+  width: 75%;
+}
+
+table{
+  border: 1px solid black;
+  margin: 20px;
+}
+
+th{
+  border: 1px solid black;
+}
+
+td{
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+

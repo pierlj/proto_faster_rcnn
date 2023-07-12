@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+
+<body>
+
+<h1 id='name'>Name :</h1>
+<div id='metainfo-container'> 
+    <div>
+        <h3 id='date'>Date:</h3>
+        <h3 id='path'>Path:</h3>
+    </div>
+    <div>
+        <h3>Details:</h3>
+        <p id='details'></p>
+    </div>
+</div>
+
+<h2>Config</h2>
+<div id='config-container'>
+</div>
+
+
+<h2>Embeddings</h2>
+
+<div class='flex-container'>
+    <div class='emb-container'>
+        <h3>RPN</h3>
+        <img src="placeholder.png" alt="" id='rpn-emb' class='emb'>
+        <div class='flex-container'>
+            <img src="placeholder.png" alt="" id='rpn-hist' class='hist'>
+            <img src="placeholder.png" alt="" id='rpn-proto' class='proto'>
+        </div>
+        
+    </div>
+    <div class='emb-container'>
+        <h3>RoI Heads</h3> 
+        <img src="placeholder.png" alt="" id='roi-emb' class='emb'>
+        <div class='flex-container'>
+            <img src="placeholder.png" alt="" id='roi-hist' class='hist'>
+            <img src="placeholder.png" alt="" id='roi-proto' class='proto'>
+        </div>
+        
+    </div>
+</div>
+
+<h2>Proposals</h2>
+<div class='flex-container'>
+    <div class='prop-container'>
+        <h4>Proposals generated with train and test prototypes</h4>
+        <img src="placeholder.png" alt="" id='proposals-full' class='proposal-image'>
+        <h4>Proposals generated with only one training class</h4>
+        <img src="placeholder.png" alt="" id='proposals-train' class='proposal-image'>
+        <h4>Proposals generated with only one test class</h4>
+        <img src="placeholder.png" alt="" id='proposals-test' class='proposal-image'>
+    </div>
+</div>
+
+<h2>Evaluation</h2>
+<div class='flex-container eval'>
+    <div>
+        <p>Evalutation on DOTA dataset with different numbers of examples per class (shots)</p>
+        <p id='train-classes'><b>Training classes: </b> </p> 
+        <p id='test-classes'><b>Test classes: </b> </p>
+    </div>
+    
+    <table id='eval-table'">
+        <caption> <b>Evaluation table</b> </caption>
+    </table>
+    <div>
+        <p>Train-train means evaluated for train classes on training data (images seen during training)</p>
+        <p>Train-test means evaluated for test classes on training data (images seen during training)</p>
+        <p>Test-train means evaluated for train classes on test data (images  not seen during training)</p>
+        <p>Test-test means evaluated for test classes on test data (images not seen during training)</p>
+    </div>
+</div>
+
+
+</body>
+
+</html>
